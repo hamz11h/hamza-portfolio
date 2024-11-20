@@ -1,0 +1,46 @@
+.space {
+  display: inline-flex;
+}
+
+.spaceFlex {
+  display: flex;
+}
+
+.vertical {
+  flex-direction: column;
+}
+
+.align {
+  &-center {
+    align-items: center;
+  }
+
+  &-start {
+    align-items: start;
+  }
+
+  &-end {
+    align-items: end;
+  }
+
+  &-baseline {
+    align-items: baseline;
+  }
+}
+
+.justify {
+  &-start {
+    justify-content: start;
+  }
+
+  &-end {
+    justify-content: end;
+  }
+  &-space-evenly {
+    justify-content: space-evenly;
+  }
+
+  &-space-between {
+    justify-content: space-between;
+  }
+}

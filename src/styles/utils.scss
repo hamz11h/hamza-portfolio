@@ -1,0 +1,155 @@
+@each $i in 12, 14, 16, 18, 20, 24 {
+  .fz-#{$i} {
+    font-size: px2rem($i) !important;
+  }
+}
+
+.fz-0 {
+  font-size: 0 !important; // stylelint-disable-line declaration-no-important
+}
+
+@each $i in 400, 600, 700 {
+  .fw-#{$i} {
+    font-weight: $i;
+  }
+}
+
+// stylelint-disable declaration-no-important
+@each $i in 0, 4, 8, 12, 16, 20, 24, 32, 38, 40, 48, 54, 56, 60, 64, 72, 96, 108
+{
+  .u-mb#{$i},
+  .uMb#{$i} {
+    margin-bottom: px2rem($i) !important;
+  }
+}
+
+@each $i in 0, 2, 4, 8, 12, 16, 20, 24, 32, 40, 48, 56, 64, 72 {
+  .u-spbwx#{$i} {
+    > * + * {
+      margin-inline-start: px2rem($i) !important;
+    }
+  }
+
+  .u-spbwy#{$i} {
+    > * + * {
+      margin-top: px2rem($i) !important;
+    }
+  }
+
+  .u-py#{$i} {
+    padding-block: px2rem($i) !important;
+  }
+
+  .u-px#{$i} {
+    padding-inline: px2rem($i) !important;
+  }
+
+  .u-p#{$i} {
+    padding: px2rem($i) !important;
+  }
+}
+// stylelint-enable declaration-no-important
+
+.u-pb72 {
+  padding-block-end: 72px;
+}
+
+.disabled,
+[disabled] {
+  opacity: 0.64;
+  pointer-events: none;
+  user-select: none;
+}
+
+.d-block,
+.dBlock {
+  display: block;
+}
+
+.d-inline-block,
+.dInlineBlock {
+  display: inline-block;
+}
+
+.flex {
+  display: flex;
+}
+
+.inlineFlex,
+.inline-flex {
+  display: inline-flex;
+}
+
+.flex-ycenter,
+.flexYcenter {
+  align-items: center;
+}
+
+.flex-ybaseline,
+.flexYbaseline {
+  align-items: baseline;
+}
+
+.flex-xcenter,
+.flexXcenter {
+  justify-content: center;
+}
+
+.flex-xend,
+.flexXend {
+  justify-content: flex-end;
+}
+
+.flex-yend,
+.flexYend {
+  align-items: flex-end;
+}
+
+.flex-grow,
+.flexGrow {
+  flex-grow: 1;
+}
+
+.flex-wrap,
+.flexWrap {
+  flex-wrap: wrap;
+}
+
+.flex-around,
+.flexAround {
+  justify-content: space-around;
+}
+
+.flex-between,
+.flexBetween {
+  justify-content: space-between;
+}
+
+.flex-evenly,
+.flexEvenly {
+  justify-content: space-evenly;
+}
+
+.flexStart,
+.flex-start {
+  align-self: flex-start;
+}
+
+.flexEnd,
+.flex-end {
+  align-self: flex-end;
+}
+
+.flexCenter,
+.flex-center {
+  align-self: center;
+}
+
+.flex-none,
+.flexNone {
+  flex: none;
+}
+
+.placeCenter {
+  place-content: center;
+}

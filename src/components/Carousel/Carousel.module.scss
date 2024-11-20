@@ -1,0 +1,13 @@
+.carouselWrapper {
+  width: 100%;
+  max-width: 250px; // Set your max width
+  margin: 0 auto;
+}
+
+.carouselItem {
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; // Example styling
+  }
+}

@@ -1,0 +1,35 @@
+$background-color: rgba(0, 0, 0, 0.5);
+$text-color: white;
+$link-hover-color: #ddd;
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  //   background-color: $background-color;
+  color: $text-color;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+
+  &Left {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  &Right {
+    a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: $text-color;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $link-hover-color;
+      }
+    }
+  }
+}
